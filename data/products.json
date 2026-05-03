@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV400 protection sunglasses perfect for summer outings. Lightweight frame with polarized lenses that eliminate glare.",
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Floral Summer Dress",
+    "brand": "BreezeWear",
+    "price": 45,
+    "rating": 4.5,
+    "stock": 8,
+    "description": "Light and airy floral summer dress made from 100% breathable cotton. Perfect for beach days or casual outings.",
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&q=80",
+    "category": "Clothing"
+  },
+  {
+    "id": 3,
+    "name": "SPF 50 Sunscreen Lotion",
+    "brand": "GlowGuard",
+    "price": 18,
+    "rating": 4.8,
+    "stock": 25,
+    "description": "Broad-spectrum SPF 50 sunscreen that protects against UVA and UVB rays. Water-resistant for up to 80 minutes.",
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&q=80",
+    "category": "Skincare"
+  },
+  {
+    "id": 4,
+    "name": "Beach Tote Bag",
+    "brand": "ShoreStyle",
+    "price": 25,
+    "rating": 4.6,
+    "stock": 15,
+    "description": "Spacious durable beach tote bag made from eco-friendly canvas. Large enough to carry towels, sunscreen, snacks, and more.",
+    "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Cooling Hydration Mist",
+    "brand": "AquaFresh",
+    "price": 12,
+    "rating": 4.4,
+    "stock": 30,
+    "description": "Instant cooling facial mist infused with cucumber extract and hyaluronic acid. Refreshes skin on hot summer days.",
+    "image": "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=500&q=80",
+    "category": "Skincare"
+  },
+  {
+    "id": 6,
+    "name": "Inflatable Pool Float",
+    "brand": "SplashZone",
+    "price": 32,
+    "rating": 4.3,
+    "stock": 12,
+    "description": "Giant flamingo-shaped inflatable pool float for ultimate summer fun. Made from durable puncture-resistant PVC.",
+    "image": "https://images.unsplash.com/photo-1530053969600-caed2596d242?w=500&q=80",
+    "category": "Beach"
+  },
+  {
+    "id": 7,
+    "name": "Straw Sun Hat",
+    "brand": "SunShade",
+    "price": 22,
+    "rating": 4.6,
+    "stock": 18,
+    "description": "Wide-brimmed natural straw hat offering excellent sun protection. UPF 50+ rating blocks over 98% of UV rays.",
+    "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=500&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Waterproof Sandals",
+    "brand": "TideWalk",
+    "price": 38,
+    "rating": 4.5,
+    "stock": 20,
+    "description": "Comfortable waterproof sandals designed for beach and water activities. Quick-dry straps with adjustable buckles.",
+    "image": "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=500&q=80",
+    "category": "Footwear"
+  }
+]
