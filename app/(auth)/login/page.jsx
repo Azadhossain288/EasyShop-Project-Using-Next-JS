@@ -95,6 +95,15 @@ export default function LoginPage() {
               </button>
             </form>
 
+            <div className="flex justify-end mt-1">
+     <Link 
+       href="/forgot-password" 
+       className="text-xs font-medium text-orange-500 hover:underline"
+     >
+      Forgot password?
+    </Link>
+  </div>
+
             <p className="text-center text-sm text-stone-500 mt-6">
               Don&apos;t have an account?{" "}
               <Link href="/register" className="text-orange-500 font-semibold">Register here</Link>
