@@ -22,6 +22,26 @@ export default function ProductCard({ product }) {
 
         <div className="p-5 space-y-3">
           <h3 className="font-semibold text-stone-800 line-clamp-1">{product.name}</h3>
+          
+          {/* --- added rating section --- */}
+          <div className="flex items-center gap-1.5">
+            <div className="flex items-center">
+              {[1, 2, 3, 4, 5].map((index) => (
+                <Star
+                  key={index}
+                  size={14}
+                  className={
+                    index <= Math.floor(product.rating)
+                      ? "text-amber-400 fill-amber-400" 
+                      : "text-stone-200 fill-stone-200" 
+                  }
+                />
+              ))}
+            </div>
+            <span className="text-xs font-bold text-stone-500">({product.rating})</span>
+          </div>
+          {/* ----------------------------- */}
+
           <div className="flex items-center justify-between pt-1">
             <span className="text-2xl font-bold text-orange-500">${product.price}</span>
             
@@ -35,7 +55,7 @@ export default function ProductCard({ product }) {
         </div>
       </div>
 
-     
+      {/* modal section */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
           <div className="bg-white rounded-3xl max-w-lg w-full overflow-hidden relative animate-in fade-in zoom-in duration-300">
@@ -49,7 +69,19 @@ export default function ProductCard({ product }) {
             <div className="p-8">
               <img src={product.image} className="w-full h-64 object-cover rounded-2xl mb-6" alt="" />
               <h2 className="text-2xl font-bold text-stone-800">{product.name}</h2>
-              <p className="text-stone-500 mt-4 leading-relaxed">{product.description || "No description available."}</p>
+              
+              {/* you can see rating with modal */}
+              <div className="flex items-center gap-2 mt-2 mb-4">
+                <div className="flex items-center">
+                  {[1, 2, 3, 4, 5].map((index) => (
+                    <Star key={index} size={16} className={index <= Math.floor(product.rating) ? "text-amber-400 fill-amber-400" : "text-stone-200 fill-stone-200"} />
+                  ))}
+                </div>
+                <span className="text-sm text-stone-500">{product.rating} Customer Rating</span>
+              </div>
+
+              <p className="text-stone-500 leading-relaxed">{product.description || "No description available."}</p>
+              
               <div className="flex items-center justify-between mt-8">
                 <span className="text-3xl font-bold text-orange-500">${product.price}</span>
                 <button className="bg-orange-500 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-orange-600 transition-all">
