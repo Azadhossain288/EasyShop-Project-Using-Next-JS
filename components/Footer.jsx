@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Sun, Mail, Phone, MapPin } from "lucide-react";
 
+
 export default function Footer() {
   return (
     <footer className="bg-stone-900 text-stone-300">
@@ -35,16 +36,16 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-2"><Mail size={15} className="text-orange-400" />support@suncart.com</li>
-              <li className="flex items-center gap-2"><Phone size={15} className="text-orange-400" />+1 (800) SUN-CART</li>
-              <li className="flex items-start gap-2"><MapPin size={15} className="text-orange-400 mt-0.5" />123 Beach Blvd, Miami, FL</li>
+              <li className="flex items-center gap-2"><Mail size={15} className="text-orange-400" />azadhossain016288@gmail.com</li>
+              <li className="flex items-center gap-2"><Phone size={15} className="text-orange-400" /> (+88) 01628893299</li>
+              <li className="flex items-start gap-2"><MapPin size={15} className="text-orange-400 mt-0.5" />Amborkhana,Sylhet</li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-white font-semibold mb-4">Follow Us</h3>
             <div className="flex gap-3">
-              {["📸", "🐦", "👥"].map((icon, i) => (
+              {["🔷 𝐟", "⬛ 𝐠", "🔵 𝖎𝖓"].map((icon, i) => (
                 <button key={i} className="w-9 h-9 rounded-xl bg-stone-700 hover:bg-orange-500 flex items-center justify-center transition-colors text-sm">
                   {icon}
                 </button>

@@ -74,14 +74,14 @@ export default function LoginPage() {
 
             <form onSubmit={handleLogin} className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-stone-700 mb-1.5">Email</label>
+                <label className="block text-sm font-medium text-black mb-1.5">Email</label>
                 <div className="relative">
                   <Mail size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400" />
                   <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" required className="w-full pl-10 pr-4 py-3 border border-stone-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all" />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-stone-700 mb-1.5">Password</label>
+                <label className="block text-sm font-medium text-black mb-1.5">Password</label>
                 <div className="relative">
                   <Lock size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400" />
                   <input type={showPass ? "text" : "password"} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••" required className="w-full pl-10 pr-10 py-3 border border-stone-200 rounded-xl text-sm focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all" />
@@ -90,7 +90,7 @@ export default function LoginPage() {
                   </button>
                 </div>
               </div>
-              <button type="submit" disabled={loading} className="w-full bg-orange-500 text-white font-semibold py-3 rounded-2xl hover:bg-orange-600 transition-all disabled:opacity-60 mt-2">
+              <button type="submit" disabled={loading} className="w-full bg-orange-500 text-black font-semibold py-3 rounded-2xl hover:bg-orange-600 transition-all disabled:opacity-60 mt-2">
                 {loading ? "Signing in..." : "Login"}
               </button>
             </form>
@@ -104,7 +104,7 @@ export default function LoginPage() {
     </Link>
   </div>
 
-            <p className="text-center text-sm text-stone-500 mt-6">
+            <p className="text-center text-sm text-black mt-6">
               Don&apos;t have an account?{" "}
               <Link href="/register" className="text-orange-500 font-semibold">Register here</Link>
             </p>
