@@ -1,19 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react"; // Suspense ইমপোর্ট করা হয়েছে
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { signIn } from "@/lib/auth-client";
 import toast from "react-hot-toast";
 import { Sun, Mail, Lock, Eye, EyeOff } from "lucide-react";
 
-export default function LoginPage() {
+
+function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPass, setShowPass] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const searchParams = useSearchParams(); // এটি এখন নিরাপদ
   const callbackUrl = searchParams.get("callbackUrl") || "/";
 
   const handleLogin = async (e) => {
@@ -96,13 +97,10 @@ export default function LoginPage() {
             </form>
 
             <div className="flex justify-end mt-1">
-     <Link 
-       href="/forgot-password" 
-       className="text-xs font-medium text-orange-500 hover:underline"
-     >
-      Forgot password?
-    </Link>
-  </div>
+              <Link href="/forgot-password" size="sm" className="text-xs font-medium text-orange-500 hover:underline">
+                Forgot password?
+              </Link>
+            </div>
 
             <p className="text-center text-sm text-black mt-6">
               Don&apos;t have an account?{" "}
@@ -112,5 +110,14 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LoginForm />
+    </Suspense>
   );
 }
