@@ -20,8 +20,8 @@ SunCart is a modern summer eCommerce platform where users can explore and purcha
 
 ## 🖼️ Screenshot
 
-> Add a screenshot of your homepage here, e.g.:
-> `![SunCart Homepage](./screenshot.png)`
+
+![SunCart Homepage](./Sun.png)
 
 ## ✨ Key Features
 
