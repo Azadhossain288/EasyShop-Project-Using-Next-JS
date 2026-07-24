@@ -80,7 +80,7 @@ The app should now be running on `http://localhost:3000`.
 ## 🔗 Links
 
 - 🌐 **Live Site:** https://easy-shop-project-using-next-js.vercel.app
-- 💻 **Repository:** *(add your GitHub repo link here)*
+- 💻 **Repository:** https://github.com/Azadhossain288/EasyShop-Project-Using-Next-JS
 
 ## 👤 Author
 
